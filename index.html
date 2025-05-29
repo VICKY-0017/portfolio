@@ -942,6 +942,9 @@
       transition: all 0.3s ease;
       position: relative;
       padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
 
     .internship-card:hover {
@@ -987,13 +990,15 @@
       color: rgba(255, 255, 255, 0.85);
       line-height: 1.7;
       font-size: 1rem;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
     }
 
     .tech-stack {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
-      margin-top: 1.5rem;
+      margin-top: auto;
     }
 
     .tech-tag {
@@ -1003,6 +1008,13 @@
       border-radius: 15px;
       font-size: 0.85rem;
       font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .tech-tag:hover {
+      background: #818cf8;
+      color: white;
+      transform: translateY(-2px);
     }
 
     #internships .section-title {
@@ -1553,7 +1565,7 @@
           <p class="internship-company">Immersive Digital Solutions (Fiverr)</p>
           <div class="internship-duration">
             <i class="far fa-calendar-alt"></i>
-            <span>Jan 2024 – May 2024</span>
+            <span>Jan 2025 – May 2025</span>
           </div>
           <p class="internship-details">Developed a <strong>comprehensive E-learning platform</strong> using MERN stack featuring student and admin portals. Implemented advanced features including <strong>AI chatbot integration</strong>, <em>doubt posting system</em>, <em>interactive quizzes</em>, and <em>audio content management</em>. Built <strong>robust APIs</strong> for seamless communication between frontend and backend.</p>
           <div class="tech-stack">
@@ -1589,13 +1601,55 @@
 
         <div class="internship-card">
           <div class="internship-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="internship-title">Web Development Intern</h3>
+          <p class="internship-company">The Sparks Foundation</p>
+          <div class="internship-duration">
+            <i class="far fa-calendar-alt"></i>
+            <span>Nov 2023 – Dec 2023</span>
+          </div>
+          <p class="internship-details">Developed a <strong>secure banking system</strong> with comprehensive features including <em>user authentication</em>, <em>transaction management</em>, and <em>account tracking</em>. Implemented <strong>real-time transaction processing</strong> using MERN stack with PostgreSQL for robust data management. Added features like <strong>transaction history</strong>, <em>balance tracking</em>, <em>fund transfers</em>, and <strong>secure payment gateway integration</strong>. Focused on security implementation with <em>JWT authentication</em> and <em>encryption</em>.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">JWT Auth</span>
+            <span class="tech-tag">Payment Gateway</span>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="internship-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3 class="internship-title">Machine Learning Intern</h3>
+          <p class="internship-company">NullClass Technology</p>
+          <div class="internship-duration">
+            <i class="far fa-calendar-alt"></i>
+            <span>Sep 2023 – Oct 2023</span>
+          </div>
+          <p class="internship-details">Developed multiple <strong>AI/ML models</strong> including a <strong>Pedestrian Detection System</strong>, <strong>Voice Recognition Model</strong>, and <strong>Child Detection Model</strong>. Implemented solutions using advanced deep learning frameworks and computer vision techniques. Utilized <em>neural networks</em> and <em>transfer learning</em> for improved model accuracy and performance.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">OpenCV</span>
+            <span class="tech-tag">YOLO</span>
+            <span class="tech-tag">Neural Networks</span>
+            <span class="tech-tag">Deep Learning</span>
+          </div>
+        </div>
+
+        <div class="internship-card">
+          <div class="internship-icon">
             <i class="fas fa-database"></i>
           </div>
           <h3 class="internship-title">Data Science Intern</h3>
           <p class="internship-company">Exposys DataLabs</p>
           <div class="internship-duration">
             <i class="far fa-calendar-alt"></i>
-            <span>Oct 2023 – Dec 2023</span>
+            <span>Jul 2023 – Aug 2023</span>
           </div>
           <p class="internship-details">Implemented <strong>customer clustering algorithms</strong> for mall customer analysis, focusing on <em>purchasing patterns</em> and <em>behavior prediction</em>. Developed <strong>predictive models</strong> for future profit forecasting and strategic decision-making. Applied <strong>advanced data analysis techniques</strong> to enhance business intelligence and customer segmentation.</p>
           <div class="tech-stack">
@@ -1604,25 +1658,6 @@
             <span class="tech-tag">Predictive Analytics</span>
             <span class="tech-tag">Data Analysis</span>
             <span class="tech-tag">Machine Learning</span>
-          </div>
-        </div>
-
-        <div class="internship-card">
-          <div class="internship-icon">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3 class="internship-title">Web Development Intern</h3>
-          <p class="internship-company">The Sparks Foundation</p>
-          <div class="internship-duration">
-            <i class="far fa-calendar-alt"></i>
-            <span>Dec 2023 – Jan 2024</span>
-          </div>
-          <p class="internship-details">Developed a secure banking website with the MERN stack and PostgreSQL backend.</p>
-          <div class="tech-stack">
-            <span class="tech-tag">React.js</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">MongoDB</span>
-            <span class="tech-tag">PostgreSQL</span>
           </div>
         </div>
       </div>
