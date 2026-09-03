@@ -70,6 +70,7 @@ const timeline = [
     year: '2025', 
     text: 'AI Product Dev & Freelance Full-Stack AI Engineer · Built Simbli AI for DCI · Best Student Innovator Award', 
     logo: '/simbli_badge.png',
+    link: 'https://www.simbli.ai/',
     highlight: true 
   },
   { year: 'Now', text: 'AI Engineer @ Kaar Technologies · Building 4CIKI', highlight: true, current: true },
@@ -137,9 +138,15 @@ export default function Education() {
                     <span className="edu__tl-text">
                       {item.text}
                       {item.logo && (
-                        <span className="edu__tl-logo-badge" title="Simbli AI">
-                          <img src={item.logo} alt="Simbli AI" className="edu__tl-logo-img" />
-                        </span>
+                        item.link ? (
+                          <a href={item.link} target="_blank" rel="noopener noreferrer" className="edu__tl-logo-badge edu__tl-logo-badge--link" title="Visit Simbli AI (https://www.simbli.ai/)">
+                            <img src={item.logo} alt="Simbli AI" className="edu__tl-logo-img" />
+                          </a>
+                        ) : (
+                          <span className="edu__tl-logo-badge" title="Simbli AI">
+                            <img src={item.logo} alt="Simbli AI" className="edu__tl-logo-img" />
+                          </span>
+                        )
                       )}
                     </span>
                   </div>

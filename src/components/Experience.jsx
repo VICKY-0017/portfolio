@@ -9,6 +9,7 @@ const earlierExperience = [
   {
     role: 'AI Product Engineer / Freelance Full-Stack Developer',
     company: 'Simbli AI (Product Development Service to DCI)',
+    link: 'https://www.simbli.ai/',
     logo: '/simbli_badge.png',
     period: 'Jan 2025 – May 2025',
     summary: 'Built Simbli AI as an end-to-end AI product development service for DCI. Architected intelligent AI pipelines, full-stack product interfaces, and automated workflows while leading and mentoring junior engineers in building production systems.',
@@ -144,13 +145,26 @@ export default function Experience() {
               <div className="exp__item-header">
                 <div className="exp__item-title-group">
                   {item.logo && (
-                    <div className="exp__item-logo-badge">
-                      <img src={item.logo} alt={item.company} className="exp__item-logo-img" />
-                    </div>
+                    item.link ? (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="exp__item-logo-badge exp__item-logo-badge--link" title={`Visit ${item.company}`}>
+                        <img src={item.logo} alt={item.company} className="exp__item-logo-img" />
+                      </a>
+                    ) : (
+                      <div className="exp__item-logo-badge">
+                        <img src={item.logo} alt={item.company} className="exp__item-logo-img" />
+                      </div>
+                    )
                   )}
                   <div>
                     <div className="exp__item-role">{item.role}</div>
-                    <div className="exp__item-company">{item.company}</div>
+                    {item.link ? (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="exp__item-company exp__item-company--link">
+                        {item.company}
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                      </a>
+                    ) : (
+                      <div className="exp__item-company">{item.company}</div>
+                    )}
                   </div>
                 </div>
                 <div className="exp__item-period">{item.period}</div>

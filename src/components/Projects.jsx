@@ -8,7 +8,8 @@ const aiProjects = [
     problem: 'Brands and content teams struggle to track viral topics in real time, generate high-impact posts tailored to each platform, and maintain consistent multi-platform publishing schedules.',
     built: 'Built an autonomous social media content generation and scheduled auto-posting AI agent for DCI. The agent detects real-time trending topics, generates platform-optimized posts engineered for maximum reach and engagement upon topic selection, and automatically publishes them at scheduled times across connected social media platforms.',
     tech: ['Autonomous AI Agent', 'Trend Discovery', 'LLM Content Gen', 'Scheduled Auto-Posting', 'Social Media APIs', 'FastAPI', 'React', 'DCI Service'],
-    demo: 'https://aistudio.dci.in/',
+    demo: 'https://www.simbli.ai/',
+    demoLabel: 'Visit Simbli AI',
     color: '#10b981',
     gradient: 'linear-gradient(135deg, rgba(16,185,129,0.18) 0%, rgba(6,182,212,0.06) 100%)',
     icon: (
@@ -115,7 +116,7 @@ export default function Projects() {
                   {proj.demo && (
                     <a href={proj.demo} target="_blank" rel="noopener noreferrer" className="proj__link">
                       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                      Live Demo
+                      {proj.demoLabel || 'Live Demo'}
                     </a>
                   )}
                 </div>
