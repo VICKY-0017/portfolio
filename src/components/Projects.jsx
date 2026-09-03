@@ -2,6 +2,23 @@ import './Projects.css'
 
 const aiProjects = [
   {
+    label: 'AI Product Development · DCI Service',
+    title: 'Simbli AI',
+    companyLogo: '/simbli_badge.png',
+    problem: 'Organizations require domain-tailored conversational and predictive AI pipelines integrated with robust full-stack architecture.',
+    built: 'Built Simbli AI as an end-to-end product development service for DCI. Architected production AI pipelines, full-stack application layers, and intelligent automations while mentoring a junior engineering team.',
+    tech: ['Simbli AI', 'Generative AI', 'Full-Stack AI', 'Python', 'FastAPI', 'React', 'DCI Service'],
+    demo: 'https://aistudio.dci.in/',
+    color: '#10b981',
+    gradient: 'linear-gradient(135deg, rgba(16,185,129,0.18) 0%, rgba(6,182,212,0.06) 100%)',
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+        <path d="M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6z"/>
+      </svg>
+    ),
+  },
+  {
     label: 'Generative AI',
     title: 'Cold Email Generator',
     problem: 'Sales teams waste time writing repetitive outreach emails that lack personalization.',
@@ -12,7 +29,7 @@ const aiProjects = [
     gradient: 'linear-gradient(135deg, rgba(37,99,235,0.15) 0%, rgba(59,130,246,0.05) 100%)',
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1-0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
         <polyline points="22,6 12,13 2,6"/>
       </svg>
     ),
@@ -75,7 +92,13 @@ export default function Projects() {
               <div className="proj__header">
                 <div className="proj__header-left">
                   <div className="proj__header-icon" style={{ color: proj.color, background: `rgba(255,255,255,0.06)` }}>
-                    {proj.icon}
+                    {proj.companyLogo ? (
+                      <div className="proj__logo-badge">
+                        <img src={proj.companyLogo} alt={proj.title} className="proj__logo-img" />
+                      </div>
+                    ) : (
+                      proj.icon
+                    )}
                   </div>
                   <div>
                     <span className="proj__label">{proj.label}</span>

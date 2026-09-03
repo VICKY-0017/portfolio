@@ -65,8 +65,13 @@ const certifications = [
 
 const timeline = [
   { year: '2023', text: 'Data Science · ML · Web Development Internships' },
-  { year: '2024', text: 'Computer Vision + Dr. Kalam Young Achiever Award' },
-  { year: '2025', text: 'Full-Stack Development · Best Student Innovator Award' },
+  { year: '2024', text: 'Computer Vision Developer @ DCI · Dr. Kalam Young Achiever Award' },
+  { 
+    year: '2025', 
+    text: 'AI Product Dev & Freelance Full-Stack AI Engineer · Built Simbli AI for DCI · Best Student Innovator Award', 
+    logo: '/simbli_badge.png',
+    highlight: true 
+  },
   { year: 'Now', text: 'AI Engineer @ Kaar Technologies · Building 4CIKI', highlight: true, current: true },
 ]
 
@@ -129,7 +134,14 @@ export default function Education() {
                   <div className="edu__tl-dot" />
                   <div className="edu__tl-content">
                     <span className="edu__tl-year">{item.year}</span>
-                    <span className="edu__tl-text">{item.text}</span>
+                    <span className="edu__tl-text">
+                      {item.text}
+                      {item.logo && (
+                        <span className="edu__tl-logo-badge" title="Simbli AI">
+                          <img src={item.logo} alt="Simbli AI" className="edu__tl-logo-img" />
+                        </span>
+                      )}
+                    </span>
                   </div>
                 </div>
               ))}

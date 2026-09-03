@@ -7,6 +7,21 @@ const kaarTechTags = [
 
 const earlierExperience = [
   {
+    role: 'AI Product Engineer / Freelance Full-Stack Developer',
+    company: 'Simbli AI (Product Development Service to DCI)',
+    logo: '/simbli_badge.png',
+    period: 'Jan 2025 – May 2025',
+    summary: 'Built Simbli AI as an end-to-end AI product development service for DCI. Architected intelligent AI pipelines, full-stack product interfaces, and automated workflows while leading and mentoring junior engineers in building production systems.',
+    tags: ['Simbli AI', 'AI Product Dev', 'DCI', 'Generative AI', 'Full-Stack AI', 'Team Mentorship'],
+  },
+  {
+    role: 'AI Club Contributor & Freelance Team Lead',
+    company: 'College AI Club & Junior Team Freelancing',
+    period: '2024 – 2025',
+    summary: 'Actively contributed to the college AI Club, teaching AI concepts and mentoring juniors to build real-world AI products. Collaborated and led a team of junior engineers to freelance and deliver production AI solutions to clients.',
+    tags: ['AI Club Leadership', 'AI Product Mentorship', 'Team Freelance', 'GenAI Products'],
+  },
+  {
     role: 'Freelance Full-Stack Developer',
     company: 'Immersive Digital Solutions',
     period: 'Jan 2025 – May 2025',
@@ -125,11 +140,18 @@ export default function Experience() {
         {/* Earlier experience list */}
         <div className="exp__list">
           {earlierExperience.map((item, i) => (
-            <div key={item.role} className={`exp__item card reveal reveal-delay-${(i % 4) + 1}`}>
+            <div key={item.role + item.company} className={`exp__item card reveal reveal-delay-${(i % 4) + 1}`}>
               <div className="exp__item-header">
-                <div>
-                  <div className="exp__item-role">{item.role}</div>
-                  <div className="exp__item-company">{item.company}</div>
+                <div className="exp__item-title-group">
+                  {item.logo && (
+                    <div className="exp__item-logo-badge">
+                      <img src={item.logo} alt={item.company} className="exp__item-logo-img" />
+                    </div>
+                  )}
+                  <div>
+                    <div className="exp__item-role">{item.role}</div>
+                    <div className="exp__item-company">{item.company}</div>
+                  </div>
                 </div>
                 <div className="exp__item-period">{item.period}</div>
               </div>

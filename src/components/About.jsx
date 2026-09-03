@@ -88,8 +88,10 @@ export default function About() {
             </p>
             <p className="about__para reveal reveal-delay-3">
               Alongside my professional work, I'm building <strong>4CIKI</strong>, an AI-focused product
-              initiative where I explore AI-native products, agentic systems, intelligent automation,
-              and practical applications of emerging AI technologies.
+              initiative exploring AI-native architectures, agentic systems, and practical emerging tech.
+              I also engineered <strong>Simbli AI</strong> as an end-to-end product development service for <strong>DCI</strong>,
+              and actively contributed to my college AI Club—mentoring juniors and leading collaborative freelance teams
+              to build real-world AI applications.
             </p>
             <p className="about__para reveal reveal-delay-4">
               My background spans Artificial Intelligence, Machine Learning, Computer Vision,

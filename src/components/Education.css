@@ -229,6 +229,29 @@
   font-weight: 700;
 }
 
+.edu__tl-logo-badge {
+  display: inline-flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 3px 8px;
+  margin-left: 0.6rem;
+  vertical-align: middle;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.edu__tl-logo-badge:hover {
+  transform: translateY(-1px) scale(1.05);
+}
+
+.edu__tl-logo-img {
+  height: 16px;
+  width: auto;
+  display: block;
+}
+
 /* Certifications Section */
 .edu__certs-section {
   position: relative;
