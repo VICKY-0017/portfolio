@@ -22,7 +22,7 @@ const awards = [
         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
       </svg>
     ),
-    title: 'Best Student Innovator Award',
+    title: 'Best Innovator Award',
     year: '2025',
     desc: 'Recognized for innovation in Artificial Intelligence, Computer Vision, Generative AI, and Machine Learning, with a focus on technology-driven environmental impact.',
     image: '/stdnt_innovation_awrd.jpg',
