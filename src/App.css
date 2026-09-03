@@ -1,0 +1,34 @@
+/* App-level styles */
+#root {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Global Ambient Lighting Aura that tracks cursor in 3D */
+.global-ambient-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.07) 0%,
+    rgba(139, 92, 246, 0.04) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 1;
+  filter: blur(50px);
+  will-change: transform;
+  opacity: 0.85;
+  transition: opacity 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .global-ambient-glow {
+    display: none;
+  }
+}

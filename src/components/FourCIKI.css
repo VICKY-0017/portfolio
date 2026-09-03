@@ -1,0 +1,420 @@
+.fourciki {
+  position: relative;
+  overflow: hidden;
+  background: var(--gradient-4ciki);
+  padding: 7rem 0;
+}
+
+.fourciki__bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(139, 92, 246, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
+.fourciki__glow {
+  position: absolute;
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.16) 0%, transparent 70%);
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.fourciki__glow--secondary {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, transparent 70%);
+  top: 70%;
+  right: -100px;
+  left: auto;
+}
+
+.fourciki__header {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 3.5rem;
+  align-items: center;
+  margin-bottom: 3.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.fourciki__brand-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.fourciki__logo-ring {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6, #06b6d4);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.fourciki__logo-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #0b1120;
+  display: block;
+}
+
+.fourciki__section-label {
+  color: #c4b5fd !important;
+  background: rgba(139, 92, 246, 0.1) !important;
+  border-color: rgba(139, 92, 246, 0.3) !important;
+  margin-bottom: 0 !important;
+}
+
+.fourciki__label-pulse {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #a78bfa;
+  box-shadow: 0 0 8px #a78bfa;
+  animation: pulse 2s infinite;
+}
+
+.fourciki__title-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.fourciki__title {
+  font-size: clamp(3rem, 6.5vw, 4.8rem);
+  letter-spacing: -0.05em;
+  background: linear-gradient(135deg, #c4b5fd 0%, #93c5fd 50%, #67e8f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.2rem;
+  line-height: 1.05;
+}
+
+.fourciki__tagline {
+  font-size: 1.08rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.fourciki__identity-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 100px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #c4b5fd;
+  white-space: nowrap;
+}
+
+.fourciki__badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #a78bfa;
+  box-shadow: 0 0 8px #a78bfa;
+}
+
+.fourciki__desc {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 680px;
+}
+
+/* 3D Holographic AI Reactor Cube Graphic */
+.fourciki__3d-core {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2.5rem 1.5rem;
+  background: rgba(13, 22, 38, 0.6);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 24px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.8), inset 0 0 30px rgba(139, 92, 246, 0.1);
+}
+
+.fourciki__cube-wrapper {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  perspective: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.fourciki__cube {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 16s infinite linear;
+}
+
+@keyframes rotateCube {
+  0% { transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg); }
+  50% { transform: rotateX(-20deg) rotateY(180deg) rotateZ(10deg); }
+  100% { transform: rotateX(20deg) rotateY(360deg) rotateZ(0deg); }
+}
+
+.fourciki__cube-face {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 1.5px solid rgba(167, 139, 250, 0.6);
+  background: rgba(139, 92, 246, 0.08);
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 0 15px rgba(139, 92, 246, 0.25);
+}
+
+.fourciki__cube-face--front  { transform: rotateY(0deg) translateZ(35px); }
+.fourciki__cube-face--back   { transform: rotateY(180deg) translateZ(35px); }
+.fourciki__cube-face--right  { transform: rotateY(90deg) translateZ(35px); }
+.fourciki__cube-face--left   { transform: rotateY(-90deg) translateZ(35px); }
+.fourciki__cube-face--top    { transform: rotateX(90deg) translateZ(35px); }
+.fourciki__cube-face--bottom { transform: rotateX(-90deg) translateZ(35px); }
+
+.fourciki__cube-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #60a5fa 0%, #a855f7 100%);
+  box-shadow: 0 0 25px 8px rgba(96, 165, 250, 0.7);
+  transform: translate(-50%, -50%);
+  animation: corePulse 2.5s ease-in-out infinite;
+}
+
+@keyframes corePulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.9; }
+  50% { transform: translate(-50%, -50%) scale(1.3); opacity: 1; filter: blur(1px); }
+}
+
+.fourciki__core-orbit {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed rgba(96, 165, 250, 0.4);
+  pointer-events: none;
+}
+
+.fourciki__core-orbit--1 {
+  width: 125px;
+  height: 125px;
+  animation: spin 14s linear infinite;
+}
+
+.fourciki__core-orbit--2 {
+  width: 155px;
+  height: 155px;
+  border-color: rgba(168, 85, 247, 0.35);
+  animation: spin 20s linear infinite reverse;
+}
+
+.fourciki__core-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px;
+  letter-spacing: 0.04em;
+}
+
+.fourciki__core-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+  animation: pulse 1.8s infinite;
+}
+
+/* Cards */
+.fourciki__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.fourciki__card {
+  padding: 2.25rem 1.85rem;
+  background: rgba(11, 17, 32, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  backdrop-filter: blur(14px);
+  position: relative;
+  overflow: hidden;
+}
+
+.fourciki__card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--card-color, var(--accent-violet));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.fourciki__card:hover {
+  border-color: var(--card-color, rgba(139, 92, 246, 0.4));
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 25px -5px var(--card-color);
+}
+
+.fourciki__card:hover::after {
+  opacity: 1;
+}
+
+.fourciki__card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+
+.fourciki__card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-base);
+}
+
+.fourciki__card:hover .fourciki__card-icon {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.fourciki__card-status {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 100px;
+  border: 1px solid;
+}
+
+.fourciki__card-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.fourciki__card-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Manifesto */
+.fourciki__manifesto {
+  position: relative;
+  z-index: 2;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(59, 130, 246, 0.04) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  overflow: hidden;
+}
+
+.fourciki__manifesto-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.75rem;
+  padding: 2.75rem 3.5rem;
+}
+
+.fourciki__quote-icon {
+  color: #a78bfa;
+  opacity: 0.6;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.fourciki__quote {
+  font-size: clamp(1.3rem, 2.7vw, 1.8rem);
+  font-weight: 800;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+@media (max-width: 960px) {
+  .fourciki__header {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .fourciki__3d-core {
+    max-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .fourciki__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .fourciki__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .fourciki__manifesto-inner {
+    padding: 1.75rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

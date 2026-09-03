@@ -1,0 +1,435 @@
+.education {
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.edu__header {
+  margin-bottom: 3.5rem;
+}
+
+/* Degree + Timeline layout */
+.edu__layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.75rem;
+  margin-bottom: 4.5rem;
+}
+
+/* Degree card */
+.edu__degree {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.edu__degree-accent {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #06b6d4);
+}
+
+.edu__degree-body {
+  padding: 2.75rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.edu__degree-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.edu__degree-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  padding: 0.35rem 0.85rem;
+  border-radius: 8px;
+}
+
+.edu__degree-cgpa-pill {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 0.35rem 0.9rem;
+  border-radius: 100px;
+}
+
+.edu__degree-cgpa-num {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #34d399;
+  letter-spacing: -0.02em;
+}
+
+.edu__degree-cgpa-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #6ee7b7;
+  text-transform: uppercase;
+}
+
+.edu__degree-major {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 0.6rem;
+}
+
+.edu__degree-institution {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.edu__degree-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+/* Timeline card */
+.edu__timeline {
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.edu__timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.edu__timeline-title {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.edu__timeline-sub {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.edu__timeline-list {
+  position: relative;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.edu__timeline-list::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: var(--border);
+}
+
+.edu__tl-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.edu__tl-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--border);
+  border: 2px solid var(--bg-card);
+  flex-shrink: 0;
+  position: absolute;
+  left: -1.75rem;
+  top: 6px;
+  transition: var(--transition-base);
+}
+
+.edu__tl-item--highlight .edu__tl-dot {
+  background: #3b82f6;
+  box-shadow: 0 0 10px #3b82f6;
+}
+
+.edu__tl-item--current .edu__tl-dot {
+  background: #10b981;
+  box-shadow: 0 0 10px #10b981;
+  animation: pulse 2s ease infinite;
+}
+
+.edu__tl-content {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.edu__tl-year {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  min-width: 38px;
+}
+
+.edu__tl-item--highlight .edu__tl-year {
+  color: #60a5fa;
+}
+
+.edu__tl-item--current .edu__tl-year {
+  color: #34d399;
+}
+
+.edu__tl-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.edu__tl-item--highlight .edu__tl-text {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.edu__tl-item--current .edu__tl-text {
+  color: #6ee7b7;
+  font-weight: 700;
+}
+
+/* Certifications Section */
+.edu__certs-section {
+  position: relative;
+}
+
+.edu__certs-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.25rem;
+}
+
+.edu__certs-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.edu__certs-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.edu__certs-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 0.5rem;
+}
+
+/* Certifications Grid */
+.edu__certs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.edu__cert {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  background: rgba(13, 22, 38, 0.75);
+  border: 1px solid var(--border);
+}
+
+.edu__cert::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--cert-color, var(--accent-blue));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.edu__cert:hover {
+  border-color: var(--cert-color, var(--accent-blue));
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.7), 0 0 20px -5px var(--cert-color);
+}
+
+.edu__cert:hover::after {
+  opacity: 1;
+}
+
+.edu__cert-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.edu__cert-logo-box {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-base);
+  overflow: hidden;
+  padding: 6px;
+}
+
+.edu__cert-logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: var(--transition-base);
+}
+
+.edu__cert-logo-img--stanford {
+  height: 32px;
+  width: auto;
+  filter: drop-shadow(0 2px 8px rgba(225, 29, 72, 0.3));
+}
+
+.edu__cert-logo-img--ibm {
+  width: 34px;
+  height: auto;
+  filter: drop-shadow(0 2px 8px rgba(15, 98, 254, 0.35));
+}
+
+.edu__cert:hover .edu__cert-logo-box {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.08);
+}
+
+.edu__cert-org-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.edu__cert-arrow {
+  color: var(--text-muted);
+  transition: var(--transition-base);
+}
+
+.edu__cert:hover .edu__cert-arrow {
+  color: var(--cert-color, var(--accent-blue));
+  transform: translate(2px, -2px);
+}
+
+.edu__cert-main {
+  flex: 1;
+}
+
+.edu__cert-name {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  margin-bottom: 0.4rem;
+}
+
+.edu__cert-issuer {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.edu__cert-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+.edu__cert-year {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.edu__cert-verify {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #60a5fa;
+  transition: var(--transition-base);
+}
+
+.edu__cert:hover .edu__cert-verify {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+@media (max-width: 1080px) {
+  .edu__certs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .edu__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .edu__certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edu__degree-body {
+    padding: 1.75rem;
+  }
+}

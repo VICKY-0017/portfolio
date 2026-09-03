@@ -1,0 +1,245 @@
+.recognition {
+  background: var(--bg-secondary);
+  position: relative;
+}
+
+/* Awards Section */
+.rec__awards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+.rec__award {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  background: rgba(13, 22, 38, 0.75);
+}
+
+.rec__award-left {
+  position: relative;
+  overflow: hidden;
+  min-height: 240px;
+  background: #020408;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rec__award-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.9;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s;
+  display: block;
+}
+
+.rec__award:hover .rec__award-img {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.rec__award-year-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+.rec__award-right {
+  padding: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.1rem;
+}
+
+.rec__award-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.rec__award-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.rec__award-desc {
+  font-size: 0.96rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.rec__award-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Badges heading */
+.rec__badges-heading {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.rec__badges-heading h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+}
+
+/* Badges Grid */
+.rec__badges {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.rec__badge {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 18px;
+  background: rgba(13, 22, 38, 0.75);
+}
+
+.rec__badge:hover {
+  border-color: var(--badge-color, var(--accent-blue));
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.7), 0 0 20px -5px var(--badge-color);
+}
+
+.rec__badge-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rec__badge-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.rec__badge-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+}
+
+.rec__badge-platform {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.rec__badge-link-arrow {
+  color: var(--text-muted);
+  transition: var(--transition-base);
+}
+
+.rec__badge:hover .rec__badge-link-arrow {
+  color: var(--badge-color);
+  transform: translate(2px, -2px);
+}
+
+/* Badge Visual Box */
+.rec__badge-visual-box {
+  width: 100%;
+  height: 120px;
+  border-radius: 12px;
+  background: #020408;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  overflow: hidden;
+}
+
+.rec__badge-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.rec__badge:hover .rec__badge-img {
+  transform: scale(1.05);
+}
+
+.rec__badge-stat {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--badge-color, var(--text-primary));
+  letter-spacing: -0.01em;
+}
+
+.rec__badge-detail {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.rec__badge-sub {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .rec__award {
+    grid-template-columns: 1fr;
+  }
+
+  .rec__award-left {
+    min-height: 220px;
+  }
+
+  .rec__award-right {
+    padding: 2rem;
+  }
+
+  .rec__badges {
+    grid-template-columns: 1fr;
+  }
+}
