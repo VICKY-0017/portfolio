@@ -60,22 +60,35 @@
   background: rgba(255, 255, 255, 0.09) !important;
 }
 
-.proj__logo-badge {
+.proj__brand-badge {
   background: #ffffff;
-  border-radius: 10px;
-  padding: 4px 8px;
+  border-radius: 12px;
+  padding: 0.55rem 1.15rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  flex-shrink: 0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.proj__logo-img {
-  height: 22px;
+.proj__item:hover .proj__brand-badge {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+}
+
+.proj__brand-img {
+  height: 28px;
   width: auto;
-  max-width: 85px;
+  max-width: 115px;
   object-fit: contain;
   display: block;
+}
+
+.proj__title-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .proj__label {

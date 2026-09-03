@@ -112,25 +112,37 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Right decorative panel */}
+        {/* Right executive profile card */}
         <div className="contact__panel reveal">
-          <div className="contact__panel-inner">
-            <img
-              src="/img5.jpeg"
-              alt="Vignesh Babu T R"
-              className="contact__photo"
-              loading="lazy"
-            />
-            <div className="contact__panel-text">
+          <div className="contact__panel-inner card">
+            <div className="contact__photo-wrapper">
+              <div className="contact__photo-glow" />
+              <img
+                src="/img5.jpeg"
+                alt="Vignesh Babu T R"
+                className="contact__photo"
+                loading="lazy"
+              />
+            </div>
+
+            <div className="contact__panel-info">
               <div className="contact__panel-name">Vignesh Babu T R</div>
-              <div className="contact__panel-role">AI Engineer · Building 4CIKI</div>
+              <div className="contact__panel-role">
+                <span className="contact__role-company">AI Engineer @ Kaar Technologies</span>
+                <span className="contact__role-sep">·</span>
+                <span className="contact__role-sub">Building 4CIKI</span>
+              </div>
               <div className="contact__panel-status">
                 <span className="contact__status-dot" />
-                Open to opportunities
+                Available for AI Engineering Roles
               </div>
             </div>
+
             <div className="contact__panel-quote">
-              "Building AI systems that solve real problems — one intelligent application at a time."
+              <svg className="contact__quote-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+              </svg>
+              <p>Building practical, production-grade AI systems that solve real problems — one intelligent application at a time.</p>
             </div>
           </div>
         </div>

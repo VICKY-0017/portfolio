@@ -2,12 +2,12 @@ import './Projects.css'
 
 const aiProjects = [
   {
-    label: 'AI Product Development · DCI Service',
+    label: 'Autonomous AI Agent · DCI Product Service',
     title: 'Simbli AI',
     companyLogo: '/simbli_badge.png',
-    problem: 'Organizations require domain-tailored conversational and predictive AI pipelines integrated with robust full-stack architecture.',
-    built: 'Built Simbli AI as an end-to-end product development service for DCI. Architected production AI pipelines, full-stack application layers, and intelligent automations while mentoring a junior engineering team.',
-    tech: ['Simbli AI', 'Generative AI', 'Full-Stack AI', 'Python', 'FastAPI', 'React', 'DCI Service'],
+    problem: 'Brands and content teams struggle to track viral topics in real time, generate high-impact posts tailored to each platform, and maintain consistent multi-platform publishing schedules.',
+    built: 'Built an autonomous social media content generation and scheduled auto-posting AI agent for DCI. The agent detects real-time trending topics, generates platform-optimized posts engineered for maximum reach and engagement upon topic selection, and automatically publishes them at scheduled times across connected social media platforms.',
+    tech: ['Autonomous AI Agent', 'Trend Discovery', 'LLM Content Gen', 'Scheduled Auto-Posting', 'Social Media APIs', 'FastAPI', 'React', 'DCI Service'],
     demo: 'https://aistudio.dci.in/',
     color: '#10b981',
     gradient: 'linear-gradient(135deg, rgba(16,185,129,0.18) 0%, rgba(6,182,212,0.06) 100%)',
@@ -91,16 +91,16 @@ export default function Projects() {
               {/* Gradient top header bar */}
               <div className="proj__header">
                 <div className="proj__header-left">
-                  <div className="proj__header-icon" style={{ color: proj.color, background: `rgba(255,255,255,0.06)` }}>
-                    {proj.companyLogo ? (
-                      <div className="proj__logo-badge">
-                        <img src={proj.companyLogo} alt={proj.title} className="proj__logo-img" />
-                      </div>
-                    ) : (
-                      proj.icon
-                    )}
-                  </div>
-                  <div>
+                  {proj.companyLogo ? (
+                    <div className="proj__brand-badge">
+                      <img src={proj.companyLogo} alt={proj.title} className="proj__brand-img" />
+                    </div>
+                  ) : (
+                    <div className="proj__header-icon" style={{ color: proj.color, background: `rgba(255,255,255,0.06)` }}>
+                      {proj.icon}
+                    </div>
+                  )}
+                  <div className="proj__title-wrap">
                     <span className="proj__label">{proj.label}</span>
                     <h3 className="proj__title">{proj.title}</h3>
                   </div>
