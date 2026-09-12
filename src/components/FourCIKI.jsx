@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import './FourCIKI.css'
 
 const focusCards = [
@@ -48,6 +49,30 @@ const focusCards = [
 ]
 
 export default function FourCIKI() {
+  const cubeRef = useRef(null)
+
+  // JS-driven rotation — immune to CSS animation suppression and
+  // the global card-tilt handler in App.jsx overwriting parent transforms
+  useEffect(() => {
+    let angleY = 0
+    let angleX = 20
+    let animId
+
+    const tick = () => {
+      angleY += 0.4          // degrees per frame ~24°/s at 60fps
+      angleX = 20 * Math.sin((angleY * Math.PI) / 180 / 2) // gentle X wobble
+
+      if (cubeRef.current) {
+        cubeRef.current.style.transform =
+          `rotateX(${angleX}deg) rotateY(${angleY}deg)`
+      }
+      animId = requestAnimationFrame(tick)
+    }
+
+    animId = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(animId)
+  }, [])
+
   return (
     <section className="section fourciki" id="4ciki">
       {/* Background */}
@@ -91,7 +116,7 @@ export default function FourCIKI() {
           {/* 3D Holographic AI Innovation Core Graphic */}
           <div className="fourciki__3d-core" aria-hidden="true">
             <div className="fourciki__cube-wrapper">
-              <div className="fourciki__cube">
+              <div ref={cubeRef} className="fourciki__cube">
                 <div className="fourciki__cube-face fourciki__cube-face--front" />
                 <div className="fourciki__cube-face fourciki__cube-face--back" />
                 <div className="fourciki__cube-face fourciki__cube-face--right" />

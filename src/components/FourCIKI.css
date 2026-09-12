@@ -184,14 +184,8 @@
   height: 70px;
   position: relative;
   transform-style: preserve-3d;
-  animation: rotateCube 16s infinite linear;
+  /* rotation driven by JS requestAnimationFrame — immune to card-tilt override */
   will-change: transform;
-}
-
-@keyframes rotateCube {
-  0% { transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg); }
-  50% { transform: rotateX(-20deg) rotateY(180deg) rotateZ(10deg); }
-  100% { transform: rotateX(20deg) rotateY(360deg) rotateZ(0deg); }
 }
 
 .fourciki__cube-face {
