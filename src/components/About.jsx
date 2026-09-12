@@ -5,7 +5,7 @@ const stats = [
   { value: '1+', label: 'Year AI Engineering', color: '#3b82f6' },
   { value: '5+', label: 'AI/ML Projects', color: '#8b5cf6' },
   { value: '2', label: 'State-Level Awards', color: '#f59e0b' },
-  { value: '4+', label: 'Certifications', color: '#10b981' },
+  { value: '5+', label: 'Certifications', color: '#10b981' },
 ]
 
 const pillars = [
@@ -106,6 +106,13 @@ export default function About() {
               <span className="about__keyword">enterprise AI</span>,{' '}
               <span className="about__keyword">automation</span>, and{' '}
               <span className="about__keyword">product engineering</span>.
+            </p>
+            <p className="about__para about__para--cert reveal reveal-delay-5">
+              I recently earned the{' '}
+              <span className="about__keyword">Claude Certified Architect – Foundations</span>{' '}
+              certification from Anthropic, validating how I design and reason about agentic AI
+              systems — directly reinforcing the agentic AI and LLM architecture work I do
+              professionally.
             </p>
           </div>
 

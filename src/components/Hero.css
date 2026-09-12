@@ -96,6 +96,11 @@
   50% { opacity: 0.6; transform: scale(1.2); }
 }
 
+@keyframes shiftGold {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
 /* Name */
 .hero__name {
   font-size: clamp(2.8rem, 6.5vw, 4.8rem);
@@ -190,6 +195,92 @@
 
 .hero__identity-sep {
   color: var(--text-muted);
+}
+
+/* Cert strip */
+.hero__cert-strip {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.25rem;
+  animation: fadeSlideIn 0.7s ease 0.45s both;
+}
+
+.hero__cert-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(217, 119, 6, 0.1) 0%,
+    rgba(13, 22, 38, 0.85) 100%
+  );
+  border: 1px solid rgba(217, 119, 6, 0.4);
+  border-radius: 100px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  max-width: fit-content;
+}
+
+.hero__cert-chip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #d97706, #fbbf24, #d97706);
+  background-size: 200% 100%;
+  animation: shiftGold 3s linear infinite;
+  border-radius: 100px 100px 0 0;
+}
+
+.hero__cert-chip:hover {
+  border-color: rgba(251, 191, 36, 0.7);
+  box-shadow: 0 0 24px -4px rgba(217, 119, 6, 0.4);
+  transform: translateY(-1px);
+}
+
+.hero__cert-chip-badge {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 6px rgba(217, 119, 6, 0.5));
+}
+
+.hero__cert-chip-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+}
+
+.hero__cert-chip-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #d97706;
+}
+
+.hero__cert-chip-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.hero__cert-chip-year {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  padding-left: 0.4rem;
+  border-left: 1px solid var(--border);
+  white-space: nowrap;
 }
 
 /* Actions */
@@ -422,6 +513,10 @@
   }
 
   .hero__identity {
+    justify-content: center;
+  }
+
+  .hero__cert-strip {
     justify-content: center;
   }
 

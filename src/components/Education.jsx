@@ -2,6 +2,22 @@ import './Education.css'
 
 const certifications = [
   {
+    title: 'Claude Certified Architect – Foundations',
+    issuer: 'Anthropic',
+    year: '2026',
+    logo: (
+      <img
+        src="/claude-certified-architect-foundations.png"
+        alt="Claude Certified Architect – Foundations badge, issued by Anthropic"
+        className="edu__cert-logo-img edu__cert-logo-img--ccaf"
+      />
+    ),
+    link: '/CCAF.pdf',
+    color: '#d97706',
+    org: 'Anthropic',
+    featured: true,
+  },
+  {
     title: 'Machine Learning Specialization',
     issuer: 'Stanford University & DeepLearning.AI',
     year: '2024',
@@ -161,13 +177,59 @@ export default function Education() {
           <div className="edu__certs-heading reveal">
             <div>
               <h3 className="edu__certs-title">Industry Certifications</h3>
-              <p className="edu__certs-desc">Verified credentials from Stanford, Google, IBM, and top global platforms.</p>
+              <p className="edu__certs-desc">Verified credentials from Anthropic, Stanford, Google, IBM, and top global platforms.</p>
             </div>
             <div className="edu__certs-line" />
           </div>
 
+          {/* Featured: Anthropic CCAF Spotlight */}
+          {certifications.filter(c => c.featured).map((cert) => (
+            <a
+              key={cert.title + '-featured'}
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="edu__cert-featured"
+              aria-label={`View ${cert.title} certificate (opens in new tab)`}
+            >
+              <div className="edu__cert-featured-badge-col">
+                <img
+                  src="/claude-certified-architect-foundations.png"
+                  alt="Claude Certified Architect – Foundations badge, issued by Anthropic"
+                  className="edu__cert-featured-badge-img"
+                />
+              </div>
+              <div className="edu__cert-featured-body">
+                <div className="edu__cert-featured-org">
+                  <span className="edu__cert-featured-org-pill">Anthropic</span>
+                  <span className="edu__cert-featured-new">New ✔</span>
+                </div>
+                <h4 className="edu__cert-featured-title">{cert.title}</h4>
+                <p className="edu__cert-featured-sub">Issued by Anthropic · 2026 · Verified Credential</p>
+                <p className="edu__cert-featured-desc">
+                  Validates expertise in designing and reasoning about agentic AI systems using
+                  Claude — covering prompt engineering, agentic architecture, tool use, and responsible
+                  AI deployment at the professional level.
+                </p>
+                <div className="edu__cert-featured-tags">
+                  <span className="edu__cert-featured-tag">Agentic AI</span>
+                  <span className="edu__cert-featured-tag">LLM Architecture</span>
+                  <span className="edu__cert-featured-tag">Claude API</span>
+                  <span className="edu__cert-featured-tag">Prompt Engineering</span>
+                  <span className="edu__cert-featured-tag">Responsible AI</span>
+                </div>
+              </div>
+              <div className="edu__cert-featured-cta">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </div>
+            </a>
+          ))}
+
+          {/* Standard Certs Grid (excluding featured) */}
           <div className="edu__certs-grid">
-            {certifications.map((cert, i) => (
+            {certifications.filter(c => !c.featured).map((cert, i) => (
               <a
                 key={cert.title}
                 href={cert.link}

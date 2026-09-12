@@ -264,6 +264,28 @@ export default function Hero() {
             </span>
           </div>
 
+          {/* Anthropic Certification Badge Strip */}
+          <div className="hero__cert-strip">
+            <a
+              href="/CCAF.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero__cert-chip"
+              aria-label="Claude Certified Architect – Foundations badge, issued by Anthropic"
+            >
+              <img
+                src="/claude-certified-architect-foundations.png"
+                alt="Claude Certified Architect – Foundations badge, issued by Anthropic"
+                className="hero__cert-chip-badge"
+              />
+              <div className="hero__cert-chip-text">
+                <span className="hero__cert-chip-label">Anthropic Certified</span>
+                <span className="hero__cert-chip-name">Claude Certified Architect – Foundations</span>
+              </div>
+              <span className="hero__cert-chip-year">2026</span>
+            </a>
+          </div>
+
           {/* CTAs */}
           <div className="hero__actions">
             <a href="#ai-work" className="btn btn-primary" onClick={scrollToWork}>

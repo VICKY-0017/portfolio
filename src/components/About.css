@@ -119,6 +119,20 @@
   margin-bottom: 0;
 }
 
+.about__para--cert {
+  padding: 1rem 1.25rem;
+  background: rgba(217, 119, 6, 0.06);
+  border-left: 2px solid #d97706;
+  border-radius: 0 8px 8px 0;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.about__para--cert .about__keyword {
+  color: #fbbf24;
+  font-weight: 700;
+}
+
 .about__keyword {
   color: #93c5fd;
   font-weight: 500;

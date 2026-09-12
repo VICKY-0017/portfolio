@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset="utf-8">
+<title>Vignesh Babu T R — Complete Portfolio Documentation</title>
+<!--[if gte mso 9]>
+<xml>
+<w:WordDocument>
+<w:View>Print</w:View>
+<w:Zoom>100</w:Zoom>
+<w:DoNotOptimizeForBrowser/>
+</w:WordDocument>
+</xml>
+<![endif]-->
+<style>
+  body {
+    font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.6;
+    margin: 40px;
+    background-color: #ffffff;
+  }
+  h1 {
+    font-size: 26pt;
+    color: #0f172a;
+    border-bottom: 3px solid #3b82f6;
+    padding-bottom: 8px;
+    margin-bottom: 4px;
+  }
+  h2 {
+    font-size: 16pt;
+    color: #1d4ed8;
+    border-bottom: 1.5px solid #e2e8f0;
+    padding-bottom: 4px;
+    margin-top: 28px;
+  }
+  h3 {
+    font-size: 13pt;
+    color: #0f172a;
+    margin-top: 18px;
+    margin-bottom: 6px;
+  }
+  h4 {
+    font-size: 11pt;
+    color: #334155;
+    margin-top: 12px;
+    margin-bottom: 4px;
+  }
+  p, li {
+    font-size: 11pt;
+    color: #334155;
+  }
+  .tagline {
+    font-size: 12pt;
+    color: #64748b;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    font-size: 10.5pt;
+  }
+  th, td {
+    border: 1px solid #cbd5e1;
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    font-weight: 600;
+  }
+  tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+  .highlight-box {
+    background-color: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-style: italic;
+    color: #1e3a8a;
+  }
+  .badge {
+    display: inline-block;
+    background-color: #e0e7ff;
+    color: #3730a3;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 9.5pt;
+    font-weight: 600;
+    margin-right: 4px;
+  }
+  a {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  ul {
+    margin-top: 6px;
+    margin-bottom: 12px;
+    padding-left: 24px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Vignesh Babu T R — Portfolio Documentation</h1>
+<div class="tagline">Comprehensive record of personal, professional, technical, project, and educational information</div>
+
+<h2>1. Executive Summary & Personal Details</h2>
+<table>
+  <tr><th style="width: 28%;">Field</th><th>Details</th></tr>
+  <tr><td><b>Full Name</b></td><td>Vignesh Babu T R</td></tr>
+  <tr><td><b>Professional Roles</b></td><td>AI Engineer | Generative AI Engineer | Agentic AI Builder | LLM Systems Developer | RAG Architect | AI Product Engineer</td></tr>
+  <tr><td><b>Current Role</b></td><td>AI Engineer @ Kaar Technologies (2025 – Present)</td></tr>
+  <tr><td><b>Product Initiative</b></td><td>Founder & Builder of 4CIKI</td></tr>
+  <tr><td><b>Availability Status</b></td><td>Available for AI Engineering Roles</td></tr>
+  <tr><td><b>Email</b></td><td><a href="mailto:t.r.vigneshbabu3110@gmail.com">t.r.vigneshbabu3110@gmail.com</a></td></tr>
+  <tr><td><b>LinkedIn</b></td><td><a href="https://www.linkedin.com/in/vignesh-babu-t-r-880880250/">linkedin.com/in/vignesh-babu-t-r-880880250</a></td></tr>
+  <tr><td><b>GitHub</b></td><td><a href="https://github.com/VICKY-0017">github.com/VICKY-0017</a></td></tr>
+  <tr><td><b>Portfolio Live Link</b></td><td><a href="https://portfolio-yj8s.onrender.com/">portfolio-yj8s.onrender.com</a> / <a href="https://vigneshbabtr.dev">vigneshbabtr.dev</a></td></tr>
+  <tr><td><b>LeetCode</b></td><td><a href="https://leetcode.com/u/vicky_3110/">leetcode.com/u/vicky_3110</a></td></tr>
+  <tr><td><b>HackerRank</b></td><td><a href="https://www.hackerrank.com/profile/t_r_vigneshbabu1">hackerrank.com/profile/t_r_vigneshbabu1</a></td></tr>
+</table>
+
+<div class="highlight-box">
+  <b>Philosophy & Narrative:</b><br>
+  "I build practical AI systems using Generative AI, LLMs, RAG, agentic workflows, and modern software engineering — turning complex problems into intelligent, scalable applications."<br><br>
+  "Don't build AI because it's possible. Build it because it solves something."
+</div>
+
+<h3>Key Career Metrics</h3>
+<ul>
+  <li><b>1+</b> Year Production AI Engineering</li>
+  <li><b>5+</b> AI/ML Projects Built & Deployed</li>
+  <li><b>2</b> State & University-Level Innovation Awards</li>
+  <li><b>4+</b> Verified Certifications (Stanford, Google, IBM, Udemy)</li>
+</ul>
+
+<h2>2. Core Pillars & Capabilities</h2>
+<table>
+  <tr><th>Pillar / Capability</th><th>Description</th><th>Associated Tech / Methods</th></tr>
+  <tr>
+    <td><b>AI Agents</b></td>
+    <td>Intelligent systems capable of multi-step reasoning, tool execution, knowledge retrieval, and autonomous workflow execution.</td>
+    <td>LangGraph, ReAct, Tool Use, Planning</td>
+  </tr>
+  <tr>
+    <td><b>RAG Systems</b></td>
+    <td>Grounded AI systems connecting LLMs with private, structured, and domain-specific knowledge bases.</td>
+    <td>Vector Databases, Embeddings, Context Retrieval, FastAPI</td>
+  </tr>
+  <tr>
+    <td><b>Generative AI Apps</b></td>
+    <td>LLM-powered applications for contextual understanding, intelligent interaction, content generation, and automation.</td>
+    <td>LangChain, Prompt Engineering, OpenAI API, Gemini API</td>
+  </tr>
+  <tr>
+    <td><b>AI Automation</b></td>
+    <td>Workflows that eliminate repetitive manual operations and support faster decision-making.</td>
+    <td>Data Pipelines, APIs, Scheduling, Monitoring</td>
+  </tr>
+  <tr>
+    <td><b>AI-Powered Analytics</b></td>
+    <td>Transforming enterprise and raw business data into strategic insights, anomaly detection, and natural language explanations.</td>
+    <td>Python, Power BI, Tableau, NLP Insights</td>
+  </tr>
+  <tr>
+    <td><b>AI Products</b></td>
+    <td>AI-native applications designed around real users, real problems, and measurable business outcomes.</td>
+    <td>Product Thinking, Full-Stack, React, FastAPI</td>
+  </tr>
+</table>
+
+<h2>3. Professional Work Experience</h2>
+
+<h3>1. AI Engineer — Kaar Technologies</h3>
+<p><b>Period:</b> 2025 – Present (Current Role)</p>
+<p><b>Tech Stack:</b> Python, LLMs, Generative AI, RAG, LangChain, LangGraph, FastAPI, Vector Databases, REST APIs, Agentic AI</p>
+<ul>
+  <li>Building enterprise-grade AI/ML and Generative AI solutions for real-world business use cases.</li>
+  <li>Working across Python, LLMs, RAG, LangChain, LangGraph, FastAPI, vector databases, APIs, and agentic AI architectures to design intelligent workflows and AI-powered applications.</li>
+  <li>Translating business requirements into AI solution architectures, developing proof-of-concepts and production-oriented systems, and integrating AI capabilities into enterprise workflows.</li>
+  <li>Focus areas: Generative AI, Agentic AI, Retrieval-Augmented Generation, intelligent automation, AI APIs, and enterprise AI applications.</li>
+</ul>
+
+<h3>2. AI Product Engineer / Freelance Full-Stack Developer — Simbli AI (DCI Product Service)</h3>
+<p><b>Period:</b> Jan 2025 – May 2025 | <b>Website:</b> <a href="https://www.simbli.ai/">https://www.simbli.ai/</a></p>
+<p><b>Tech Stack:</b> Simbli AI, AI Product Dev, DCI, Generative AI, Full-Stack AI, Team Mentorship</p>
+<ul>
+  <li>Built Simbli AI as an end-to-end AI product development service for DCI.</li>
+  <li>Architected intelligent AI pipelines, full-stack product interfaces, and automated workflows.</li>
+  <li>Led and mentored junior engineers in building production systems.</li>
+</ul>
+
+<h3>3. AI Club Contributor & Freelance Team Lead — College AI Club & Junior Team Freelancing</h3>
+<p><b>Period:</b> 2024 – 2025</p>
+<p><b>Tech Stack:</b> AI Club Leadership, AI Product Mentorship, Team Freelance, GenAI Products</p>
+<ul>
+  <li>Actively contributed to the college AI Club, teaching AI concepts and mentoring juniors to build real-world AI products.</li>
+  <li>Collaborated and led a team of junior engineers to freelance and deliver production AI solutions to clients.</li>
+</ul>
+
+<h3>4. Freelance Full-Stack Developer — Immersive Digital Solutions</h3>
+<p><b>Period:</b> Jan 2025 – May 2025</p>
+<p><b>Tech Stack:</b> React.js, Node.js, MongoDB, Express.js, AI Chatbot</p>
+<ul>
+  <li>Built a comprehensive MERN-stack e-learning platform with AI chatbot integration, student/admin portals, interactive quizzes, and audio content management.</li>
+</ul>
+
+<h3>5. Computer Vision Developer — DCI, Madurai</h3>
+<p><b>Period:</b> Jan 2024 – Mar 2024</p>
+<p><b>Tech Stack:</b> PyTorch, YOLO, OpenCV, Deep SORT</p>
+<ul>
+  <li>Developed a real-time suspicious activity detection system using YOLO, Deep SORT, and OpenCV.</li>
+  <li>Built a GUI interface with automated reporting.</li>
+</ul>
+
+<h3>6. Web Development Intern — The Sparks Foundation</h3>
+<p><b>Period:</b> Nov 2023 – Dec 2023</p>
+<p><b>Tech Stack:</b> React.js, Node.js, MongoDB, JWT Auth</p>
+<ul>
+  <li>Built a secure MERN-stack banking system with transaction management, JWT authentication, and real-time fund transfer capabilities.</li>
+</ul>
+
+<h3>7. Machine Learning Intern — NullClass Technology</h3>
+<p><b>Period:</b> Sep 2023 – Oct 2023</p>
+<p><b>Tech Stack:</b> PyTorch, TensorFlow, OpenCV, YOLO, Deep Learning</p>
+<ul>
+  <li>Developed ML models for pedestrian detection, voice recognition, and child detection using deep learning and transfer learning techniques.</li>
+</ul>
+
+<h3>8. Data Science Intern — Exposys DataLabs</h3>
+<p><b>Period:</b> Jul 2023 – Aug 2023</p>
+<p><b>Tech Stack:</b> Python, Machine Learning, Clustering, Data Analysis</p>
+<ul>
+  <li>Implemented customer clustering algorithms for retail analysis and built predictive models for business decision support.</li>
+</ul>
+
+<h2>4. Product Initiative: 4CIKI</h2>
+<p><b>Founder & Builder:</b> Vignesh Babu T R</p>
+<p><b>Tagline:</b> <i>AI products. Intelligent systems. Real-world impact.</i></p>
+<p>4CIKI is an AI-focused product initiative exploring the next generation of intelligent products and agentic systems. Used to experiment with AI-native products, agentic workflows, intelligent automation, and AI-powered solutions designed around real-world problems.</p>
+<ul>
+  <li><b>Agentic AI:</b> Intelligent multi-agent systems that reason through tasks, use tools, retrieve information, and execute multi-step workflows.</li>
+  <li><b>Generative AI:</b> Context-aware LLM applications that interact naturally with users and business data.</li>
+  <li><b>AI Automation:</b> Autonomous workflows reducing manual operations.</li>
+  <li><b>AI Products:</b> Production-ready applications delivering measurable outcomes.</li>
+</ul>
+
+<h2>5. Selected Projects</h2>
+
+<h3>1. Simbli AI — Autonomous Social Media AI Agent</h3>
+<ul>
+  <li><b>Category:</b> Autonomous AI Agent · DCI Product Service</li>
+  <li><b>Website:</b> <a href="https://www.simbli.ai/">https://www.simbli.ai/</a></li>
+  <li><b>Problem:</b> Brands and content teams struggle to track viral topics in real time, generate high-impact posts tailored to each platform, and maintain consistent multi-platform publishing schedules.</li>
+  <li><b>What I Built:</b> Built an autonomous social media content generation and scheduled auto-posting AI agent for DCI. The agent detects real-time trending topics, generates platform-optimized posts engineered for maximum reach and engagement upon topic selection, and automatically publishes them at scheduled times across connected social media platforms.</li>
+  <li><b>Technologies:</b> Autonomous AI Agent, Trend Discovery, LLM Content Gen, Scheduled Auto-Posting, Social Media APIs, FastAPI, React, DCI Service.</li>
+</ul>
+
+<h3>2. Cold Email Generator — GenAI Sales Outreach</h3>
+<ul>
+  <li><b>Category:</b> Generative AI</li>
+  <li><b>Repository:</b> <a href="https://github.com/VICKY-0017/Email_generator-GenAI-">GitHub Repository</a></li>
+  <li><b>Problem:</b> Sales teams waste time writing repetitive outreach emails that lack personalization.</li>
+  <li><b>What I Built:</b> A GenAI application that analyzes website context and generates personalized outreach messages using prompt engineering and LLM-based generation.</li>
+  <li><b>Technologies:</b> Python, LangChain, OpenAI API, NLP, Flask.</li>
+</ul>
+
+<h3>3. Suspicious Activity Detection — Computer Vision Surveillance</h3>
+<ul>
+  <li><b>Category:</b> Computer Vision AI</li>
+  <li><b>Live Platform:</b> <a href="https://aistudio.dci.in/">https://aistudio.dci.in/</a></li>
+  <li><b>Problem:</b> Manual video surveillance is slow, error-prone, and unable to scale across multiple feeds.</li>
+  <li><b>What I Built:</b> A real-time computer vision system for detecting and tracking suspicious activities in surveillance footage using object detection, multi-object tracking, and automated event reporting.</li>
+  <li><b>Technologies:</b> PyTorch, YOLO, Deep SORT, OpenCV, Python.</li>
+</ul>
+
+<h3>4. Earthiest — AI Environmental Platform</h3>
+<ul>
+  <li><b>Category:</b> AI + Full-Stack</li>
+  <li><b>Live Demo:</b> <a href="https://wyldlyf-orginal.onrender.com/">https://wyldlyf-orginal.onrender.com/</a></li>
+  <li><b>Problem:</b> Traditional environmental campaigns lack engagement mechanics and verifiable participation.</li>
+  <li><b>What I Built:</b> A gamified environmental platform with Gemini-powered image verification that validates tree plantation activities and enables reward-driven community participation.</li>
+  <li><b>Technologies:</b> React, Node.js, MongoDB, Gemini API, JWT.</li>
+</ul>
+
+<h3>5. Earlier Analytics Dashboards</h3>
+<ul>
+  <li><b>Netflix Intelligence Dashboard:</b> Interactive analytics dashboard exploring content distribution, genres, trends, and catalog patterns to derive insights from Netflix data. (Tableau, SQL, Data Analytics) — <a href="https://drive.google.com/file/d/1scOzoXBNIIgfbPela9EKuwt-YMvUkS5T/view">View Dashboard</a></li>
+  <li><b>Air Crash Analysis Dashboard:</b> Interactive Power BI analytics system examining global aviation accident patterns across fatalities, aircraft types, operators, and historical trends. (Power BI, DAX, Data Modeling, Analytics) — <a href="https://drive.google.com/file/d/16b3ehZTI6VO4DXJvodygpSHSm67zBklS/view">View Dashboard</a></li>
+</ul>
+
+<h2>6. Technical Skills Inventory</h2>
+<table>
+  <tr><th>Domain</th><th>Skills & Tools</th></tr>
+  <tr><td><b>AI & Generative AI (Core)</b></td><td>LLMs, Generative AI, RAG, AI Agents, Agentic Workflows, Prompt Engineering, LangChain, LangGraph</td></tr>
+  <tr><td><b>AI / Machine Learning (Core)</b></td><td>Python, Machine Learning, Deep Learning, Computer Vision, NLP, PyTorch, TensorFlow, YOLO, OpenCV</td></tr>
+  <tr><td><b>AI Engineering (Core)</b></td><td>FastAPI, REST APIs, Vector Databases, API Integration, Backend Architecture, AI Application Development</td></tr>
+  <tr><td><b>Software Engineering</b></td><td>JavaScript, React, Node.js, Express, MongoDB, SQL, Git</td></tr>
+  <tr><td><b>Data & Analytics</b></td><td>Power BI, Tableau, DAX, Data Modeling, Data Analysis</td></tr>
+</table>
+
+<h2>7. Awards & Recognition</h2>
+<table>
+  <tr><th>Award</th><th>Year / Level</th><th>Details</th><th>File Reference</th></tr>
+  <tr>
+    <td><b>Dr. Kalam Young Achiever Award</b></td>
+    <td>2024 (State Level)</td>
+    <td>Recognized for developing an AI-powered environmental conservation solution selected as the Best Idea & Prototype at the state level.</td>
+    <td><code>KALAM_AWARDS_2024.pdf</code><br>Photo: <code>kalam_awrd.jpg</code></td>
+  </tr>
+  <tr>
+    <td><b>Best Innovator Award</b></td>
+    <td>2025 (Velammal Odyssey)</td>
+    <td>Awarded for exceptional innovation in AI product development (including Simbli AI for DCI), actively contributing to the college AI Club to teach and build AI products, and leading collaborative freelance teams with juniors to build real-world AI applications.</td>
+    <td><code>student_innovation_award.pdf</code><br>Photo: <code>stdnt_innovation_awrd.jpg</code></td>
+  </tr>
+</table>
+
+<h3>Competitive Badges</h3>
+<ul>
+  <li><b>HackerRank:</b> 3 Gold Badges in Python, SQL, and Problem Solving (100+ challenges completed) — <a href="https://www.hackerrank.com/profile/t_r_vigneshbabu1">Profile</a> (Asset: <code>hackerank_batches.jpg</code>)</li>
+  <li><b>LeetCode:</b> Pandas Badge — Data Manipulation Expert (50+ solutions) — <a href="https://leetcode.com/u/vicky_3110/">Profile</a> (Asset: <code>pandas.jpg</code>)</li>
+</ul>
+
+<h2>8. Education & Certifications</h2>
+
+<h3>Formal Degree</h3>
+<ul>
+  <li><b>Degree:</b> Bachelor of Engineering (B.E.) in Computer Science and Engineering</li>
+  <li><b>Institution:</b> Velammal College of Engineering and Technology</li>
+  <li><b>CGPA:</b> <b>7.95</b></li>
+  <li><b>Core Subjects:</b> Algorithms & Data Structures, Operating Systems, AI & Machine Learning, Computer Networks</li>
+</ul>
+
+<h3>Timeline</h3>
+<ul>
+  <li><b>2023:</b> Data Science · ML · Web Development Internships</li>
+  <li><b>2024:</b> Computer Vision Developer @ DCI · Dr. Kalam Young Achiever Award</li>
+  <li><b>2025:</b> AI Product Dev & Freelance Full-Stack AI Engineer · Built Simbli AI for DCI · Best Student Innovator Award</li>
+  <li><b>Now:</b> AI Engineer @ Kaar Technologies · Building 4CIKI</li>
+</ul>
+
+<h3>Verified Industry Certifications</h3>
+<table>
+  <tr><th>Certification</th><th>Issuing Organization</th><th>Year</th><th>Document File</th></tr>
+  <tr><td><b>Machine Learning Specialization</b></td><td>Stanford University & DeepLearning.AI</td><td>2024</td><td><code>Machine_learning certificate.pdf</code></td></tr>
+  <tr><td><b>Google Data Analytics Professional Certificate</b></td><td>Google Career Certificates</td><td>2024</td><td><code>Google data analytics professional certificate.pdf</code></td></tr>
+  <tr><td><b>Python for Data Science</b></td><td>IBM Cognitive Class</td><td>2023</td><td><code>Python_101_Data_Science.png</code></td></tr>
+  <tr><td><b>Full-Stack Development Bootcamp</b></td><td>Udemy — MERN Stack</td><td>2024</td><td><code>Full-stack_Web_devolopment_certificate.pdf</code></td></tr>
+</table>
+
+</body>
+</html>

@@ -161,7 +161,7 @@
   background: rgba(13, 22, 38, 0.6);
   border: 1px solid rgba(139, 92, 246, 0.2);
   border-radius: 24px;
-  backdrop-filter: blur(16px);
+  /* backdrop-filter removed: it creates a stacking context that flattens child 3D transforms */
   box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.8), inset 0 0 30px rgba(139, 92, 246, 0.1);
 }
 
@@ -170,10 +170,13 @@
   height: 140px;
   position: relative;
   perspective: 800px;
+  perspective-origin: 50% 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
+  /* isolation: auto ensures no new stacking context that would flatten 3D */
+  isolation: auto;
 }
 
 .fourciki__cube {
@@ -182,6 +185,7 @@
   position: relative;
   transform-style: preserve-3d;
   animation: rotateCube 16s infinite linear;
+  will-change: transform;
 }
 
 @keyframes rotateCube {
@@ -196,8 +200,8 @@
   height: 70px;
   border: 1.5px solid rgba(167, 139, 250, 0.6);
   background: rgba(139, 92, 246, 0.08);
-  backdrop-filter: blur(4px);
   box-shadow: inset 0 0 15px rgba(139, 92, 246, 0.25);
+  /* NOTE: No backdrop-filter here — it breaks preserve-3d / 3D compositing */
 }
 
 .fourciki__cube-face--front  { transform: rotateY(0deg) translateZ(35px); }
